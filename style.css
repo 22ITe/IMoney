@@ -258,6 +258,10 @@ footer>.container .info {
         border: none;
     }
 
+    .about-product .box>.item {
+        width: 100%;
+    }
+
     /* FEATURE-------------------- */
     .feature .box {
         flex-direction: column;
