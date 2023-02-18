@@ -10,7 +10,7 @@ header {
 
 header>nav {
     margin: auto;
-    width: 1200px;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -25,11 +25,8 @@ header>nav ul {
     display: flex;
     list-style: none;
     font-size: 24px;
+    gap: 20px;
 } 
-
-header>nav ul li {
-    padding-inline: 20px;
-}
 
 /* HOME */
 /* ------------------ */
@@ -42,8 +39,8 @@ header>nav ul li {
 }
 
 .home .heading {
+    margin-top: 120px;
     text-align: center;
-    /* position: relative; */
 }
 
 .home .heading>h1 {
@@ -161,19 +158,18 @@ header>nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .feature .box .item {
     height: 500px;
     flex: 1;
     margin: 10px;
-    /* background-color: #333; */
 }
 
 .feature .box .item .img {
     height: 50%;
     width: 100%;
-    /* background-color: white; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,10 +183,6 @@ header>nav ul li {
 .feature .box .item .content {
     color: #333;
     text-align: center;
-}
-
-.feature .box .item .content .title {
-    
 }
 
 .feature .box .item .content p {
@@ -207,7 +199,7 @@ footer {
 }
 
 footer>.container {
-    width: 1200px;
+    max-width: 1200px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -237,3 +229,48 @@ footer>.container .info {
     margin-top: 20px;
 }
 
+@media (max-width: 740px) {
+
+    header, footer {
+        padding: 10px;
+    }
+
+    header>nav ul li a {
+        font-size: 20px;
+    }
+
+    /* HOME--------------------- */
+    .home .heading>h1 {
+        font-size: 40px;
+    }
+
+    .home .img img {
+        object-fit: cover;
+    }
+
+    /* ABOUT PRODUCT------------- */
+    .about-product .box {
+        padding: 20px;
+        margin-top: 20px;
+        gap: 40px;
+        flex-direction: column;
+        height: auto;
+        border: none;
+    }
+
+    /* FEATURE-------------------- */
+    .feature .box {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .feature .box .item {
+        margin-block: 40px;
+        padding: 10px;
+    }
+
+    .feature .box .item .content {
+        margin-top: 40px;
+    }
+}
