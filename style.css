@@ -21,6 +21,10 @@ header>nav {
     width: 75px;
 }
 
+.logo2 img{
+    width: 150px;
+}
+
 header>nav ul {
     display: flex;
     list-style: none;
