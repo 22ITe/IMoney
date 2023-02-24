@@ -17,8 +17,8 @@ header>nav {
     align-items: center;
 }
 
-.logo>h1>span {
-    color: red;
+.logo img{
+    width: 75px;
 }
 
 header>nav ul {
@@ -88,7 +88,7 @@ header>nav ul {
 .home::after {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     inset: 0;
     z-index: -1;
 }
